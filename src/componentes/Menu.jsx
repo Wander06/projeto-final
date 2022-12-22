@@ -7,7 +7,7 @@ const Menu = () => {
             <header>
                 <nav>
                     <ul className="nav-list">
-                        <li><Link className="link" to='/'>Home</Link></li>
+                        <li><Link className="link" to='/'>Página Inicial</Link></li>
                         <li><Link className="link" to='/PagCalculadora'>Calculadora</Link></li>
                         <li><Link className="link" to='/PagCofre'>Cofre</Link></li>
                     </ul>        

@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import PagHome from "../paginas/home/PagHome";
+import PagHome from "../paginas/home/PaginaInicial";
 import PagCalculadora from "../paginas/calculadora/PagCalculadora";
 import PagCofre from "../paginas/cofre/PagCofre";
 

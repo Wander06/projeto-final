@@ -21,7 +21,7 @@ const Cofre = () =>{
 
     function abrirCofre (){
         if(num === "1234"){
-            setResult('Correto')
+            setResult('Aberto')
         }
         else{
             setResult('Error')
@@ -42,7 +42,7 @@ const Cofre = () =>{
                     <div className="portaCofre">
                         <Display className={"resultadoCofre"} textoDisplay={result}/>
                         <div className="tecladoCofre">
-                            <Display className={"displayCofre"} textoDisplay={num}/>
+                            <div className="displayCofre">{num}</div>
                             <table>
                                 <tbody>
                                     <tr>

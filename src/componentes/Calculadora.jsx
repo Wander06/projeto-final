@@ -72,13 +72,13 @@ const Calculadora = () =>{
                         <table>
                             <tbody>
                                 <tr>
-                                    <td><Tecla className={'botao'} onClick={limpar} textoTecla={'C'}/></td>
+                                    <td><Tecla className={'botaoClear'} onClick={limpar} textoTecla={'C'}/></td>
                                         {['ˆ','%',].map((numero, index) => (
                                             <td key={index}>
-                                                <Tecla className={'botao'} onClick={inserirOperacoesDisplay} textoTecla={numero} valor={numero}/>
+                                                <Tecla className={'botaoOperacao'} onClick={inserirOperacoesDisplay} textoTecla={numero} valor={numero}/>
                                             </td>  
                                         ))}
-                                    <td><Tecla className={'botao'} onClick={inserirOperacoesDisplay} textoTecla={'÷'} valor={'÷'}/></td>
+                                    <td><Tecla className={'botaoOperacao'} onClick={inserirOperacoesDisplay} textoTecla={'÷'} valor={'÷'}/></td>
                                 </tr>
                                 <tr>
                                     {[7,8,9].map((numero, index) => (
@@ -86,7 +86,7 @@ const Calculadora = () =>{
                                             <Tecla className={'botao'} onClick={inserirNumeroDisplay} textoTecla={numero} valor={numero}/>
                                         </td>  
                                     ))}
-                                    <td><Tecla className={'botao'} onClick={inserirOperacoesDisplay} textoTecla={'X'} valor={'X'}/></td>
+                                    <td><Tecla className={'botaoOperacao'} onClick={inserirOperacoesDisplay} textoTecla={'X'} valor={'X'}/></td>
                                 </tr>
                                 <tr>
                                     {[4,5,6].map((numero, index) => (
@@ -94,7 +94,7 @@ const Calculadora = () =>{
                                             <Tecla className={'botao'} onClick={inserirNumeroDisplay} textoTecla={numero} valor={numero}/>
                                         </td>  
                                     ))}
-                                    <td><Tecla className={'botao'} onClick={inserirOperacoesDisplay} textoTecla={'-'} valor={'-'}/></td>
+                                    <td><Tecla className={'botaoOperacao'} onClick={inserirOperacoesDisplay} textoTecla={'-'} valor={'-'}/></td>
                                 </tr>
                                 <tr>
                                     {[1,2,3].map((numero, index) => (
@@ -102,7 +102,7 @@ const Calculadora = () =>{
                                             <Tecla className={'botao'} onClick={inserirNumeroDisplay} textoTecla={numero} valor={numero}/>
                                         </td>  
                                     ))}
-                                    <td><Tecla className={'botao'} onClick={inserirOperacoesDisplay} textoTecla={'+'} valor={'+'}/></td>
+                                    <td><Tecla className={'botaoOperacao'} onClick={inserirOperacoesDisplay} textoTecla={'+'} valor={'+'}/></td>
                                 </tr>
                                 <tr>
                                     <td> <Tecla className={'botao'} onClick={trocaSinal} textoTecla={'+/-'} valor={'+/-'}/></td>
@@ -112,12 +112,12 @@ const Calculadora = () =>{
                                     </td>  
                                     ))}
                                     <td>
-                                        <Tecla className={'botao'} onClick={calcularResultado} textoTecla={'='}/>
+                                        <Tecla className={'botaoResultado'} onClick={calcularResultado} textoTecla={'='}/>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>  
-                        <img id='barraNavegacao' src={imageBarra} alt="barra de navegação" />
+                        <img id="barraNavegacao" src={imageBarra} alt="barra de navegação" />
                     </div> 
                 </div>
             </section>
